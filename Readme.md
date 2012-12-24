@@ -16,6 +16,7 @@ Very good article on subject and a remakrable hamster:
 http://www.planetgeek.ch/2010/06/17/code-quality-building-code-you-wont-curse-tomorrow/
 Quality definition taken form:
 http://blogs.oosterkamp.nl/blogs/thomas/archive/2010/04/06/software-quality-external-versus-internal.aspx
+Awesome comic about "WTFs/minute"
 
 #### Code snippets are mostly taken from govnokod.ru
 

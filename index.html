@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>Code quality - Alexander Rozumiy</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=1274, user-scalable=no">
 	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
@@ -22,6 +22,18 @@
 
     #hamster img {
       padding-top: 150px;
+    }
+
+    #dates_example pre {
+      font-size: 90%;
+    }
+
+    #dates_example pre code {
+      line-height: 40px;
+    }
+
+    #wtfs img {
+      height: 100%;
     }
 	</style>
 </head>
@@ -143,6 +155,149 @@
   </div></section>
 
 
+
+
+  <section class="slide shout" id="know-tools"><div>
+    <h2>Know your tools</h2>
+  </div></section>
+
+  <section class="slide"><div>
+    <pre>
+      <code>void get_tomorrow_date( struct timeval *date )</code>
+      <code>{</code>
+      <code>  sleep( 86400 ); // 60 * 60 * 24</code>
+      <code>  gettimeofday( date, 0 );</code>
+      <code>}</code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <pre>
+      <code>res = nil</code>
+      <code>pics = self.pictures.not_price.all</code>
+      <code>if pics && pics.any?</code>
+      <code>  res = pics.first</code>
+      <code>end</code>
+    </pre>
+
+    <p>While knowing your tool it may become <code>res.last</code></p>
+  </div></section>
+
+  <section class="slide"><div>
+    <pre>
+      <code>public virtual int ReadByte()</code>
+    </pre>
+  </div></section>
+
+
+
+  <section class="slide shout" id="think"><div>
+    <h2>Think<br />
+      Yes, THINK</h2>
+  </div></section>
+
+  <section class="slide" id="dates_example"><div>
+    <pre>
+      <code>  if self.from <= Date.today</code>
+      <code>    if self.to</code>
+      <code>      if self.to >= Date.today</code>
+      <code>        true</code>
+      <code>      else</code>
+      <code>        false</code>
+      <code>      end</code>
+      <code>    else</code>
+      <code>      true</code>
+      <code>    end</code>
+      <code>  else</code>
+      <code>    false</code>
+      <code>  end</code>
+    </pre>
+  </section></div>
+
+  <section class="slide"><div>
+    <pre>
+      <code>$week['monday'] = date("d.m.Y", $week_start);</code>
+      <code>$week['tuesday'] = date("d.m.Y", $week_start + 1 * 86400);</code>
+      <code>$week['wednesday'] = date("d.m.Y", $week_start + 2 * 86400);</code>
+      <code>$week['thursday'] = date("d.m.Y", $week_start + 3 * 86400);</code>
+      <code>$week['friday'] = date("d.m.Y", $week_start + 4 * 86400);</code>
+      <code>$week['saturday'] = date("d.m.Y", $week_start + 5 * 86400);</code>
+      <code>$week['sunday'] = date("d.m.Y", $week_start + 6 * 86400);</code>
+    </pre>
+  </section></div>
+
+
+  <section class="slide shout"><div>
+    <h2>Name your variables</h2>
+  </div></section>
+
+  <section class="slide"><div>
+    <pre>
+      <code>int p,k,l,i,j,d,q,R,t,r;</code>
+      <code>S6:    k+=d; if (k==l) goto S13; else x[k]=x[j];c[k]=c[j];</code>
+      <code>S7:    j-=1; r-=1; if (r>0) goto S6; else goto S12;</code>
+      <code>S8:    k+=d; x[k]=x[j]; c[k]=c[j];</code>
+      <code>S9:    j-=1; r-=1; if (r>0) goto S3;</code>
+      <code>S10:   k+=d; if (k==l) goto S13; else x[k]=x[i];c[k]=c[i];</code>
+      <code>S11:   i+=1; q-=1; if (q>0) goto S10;</code>
+      <code>S12:   q=p; r=p; d=-d; t=k; k=l; l=t; if (j-i<p) goto S10; else goto S3;</code>
+      <code>S13:   p+=p; if (p<n) { s=1-s; goto S2; }</code>
+      <code>       if (s==0) for (t=1; t<=n; t+=1) { x[t]=x[t+n];c[t]=c[t+n] }</code>
+    </pre>
+    <p><a href="http://govnokod.ru/286">Full version</a></p>
+  </div></section>
+
+  <section class="slide shout"><div>
+    <h2>Refactor your code. Copy and paste costs a lot</h2>
+  </div></section>
+
+  <section class="slide" id="copynpaste"><div>
+    <pre>
+      <code>switch ($data2[&quot;PHONE&quot;][$i][&quot;type&quot;]) {</code>
+      <code>case “Факс”:</code>
+      <code>echo “&lt;option selected&gt;Факс”;</code>
+      <code>echo “&lt;option&gt;Офисный телефон”;</code>
+      <code>echo “&lt;option&gt;Колцентр”;</code>
+      <code>echo “&lt;option&gt;Телефон”;</code>
+      <code>echo “&lt;option&gt;Мобильный телефон”;</code>
+      <code>break;</code>
+      <code>case “Офисный телефон”:</code>
+      <code>echo “&lt;option&gt;Факс”;</code>
+      <code>echo “&lt;option selected&gt;Офисный телефон”;</code>
+      <code>echo “&lt;option&gt;Колцентр”;</code>
+      <code>echo “&lt;option&gt;Телефон”;</code>
+      <code>echo “&lt;option&gt;Мобильный телефон”;</code>
+      <code>break;</code>
+      <code>case “Колцентр”:</code>
+      <code>echo “&lt;option&gt;Факс”;</code>
+      <code>echo “&lt;option&gt;Офисный телефон”;</code>
+      <code>echo “&lt;option selected&gt;Колцентр”;</code>
+      <code>echo “&lt;option&gt;Телефон”;</code>
+      <code>echo “&lt;option&gt;Мобильный телефон”;</code>
+    </pre>
+    <p><a href="http://govnokod.ru/140">Full version</a></p>
+  </div></section>
+
+
+  <section class="slide"><div>
+    <h2>What next?</h2>
+    <ol>
+      <li><a href="http://www.youtube.com/watch?v=Oj4vXMRenFo">Delete your code, Aleksander Dabrowski</a></li>
+      <li class="next"><a href="http://www.planetgeek.ch/2010/06/17/code-quality-building-code-you-wont-curse-tomorrow/">Code quality</a></li>
+      <li class="next">Or switch pictures</li>
+      <li class="next">And much more</li>
+      <li class="next">But it will work only once</li>
+    </ol>
+  </div></section>
+
+  <section class="slide shout" id="else"><div>
+    <h2>Something else?</h2>
+  </div></section>
+
+  <section class="slide cover" id="wtfs"><div>
+    <img src="pictures/wtfs.jpg" alt="">
+  </div></section>
+
 	<section class="slide" id="thanks"><div>
 		<h2>Code quality</h2>
 		<p>Alexander Rozumiy, Innovecs</p>
@@ -152,85 +307,6 @@
 		</ul>
 		<p>Presentation: <a href="http://brain-geek.github.com/quality-presentation">brain-geek.github.com/quality-presentation</a></p>
 	</div></section>
-
-
-
-
-  <section class="slide"><div>
-    <h2>Heading</h2>
-    <p>In your slides text you can use <a href="http://google.com/">links</a> and various inline elements for <em>emotional</em> and <strong>strong</strong> emphasis or just for <i>italic</i> or <b>bold</b> decoration. <code>&lt;code&gt;</code> is used for inline code samples.</p>
-  </div></section>
-  <section class="slide"><div>
-    <h2>Two rows.<br> Mighty heading</h2>
-    <p>You can use two lines header but it would reduce space on a slide. The “Ribbon” theme is designed for seven lines of code after one-line header by default.</p>
-    <p class="note">This paragraph could be used as a footnote</p>
-  </div></section>
-  <section class="slide"><div>
-    <h2>Various lists</h2>
-    <ul>
-      <li>Simple lists are marked with bullets.</li>
-      <li>Ordered lists begin with a number.</li>
-      <li>You can even nest lists one inside another.
-        <ol>
-          <li>Or mix their types.</li>
-          <li>But do not go too far.</li>
-          <li>Otherwise audience will be bored.</li>
-        </ol>
-      </li>
-      <li>Look, seven rows exactly!</li>
-    </ul>
-  </div></section>
-  <section class="slide"><div>
-    <h2>Serious citation</h2>
-    <figure>
-      <blockquote>
-        <p>You can wrap one or more paragraphs into citation, which will make text italic and add a nice quote on the left. Giving the citation source would make it even more serious.</p>
-      </blockquote>
-      <figcaption>Vadim Makeev</figcaption>
-    </figure>
-  </div></section>
-  <section class="slide"><div>
-    <h2>When you have a lot of code</h2>
-    <pre>
-      <code>&lt;html lang="en"&gt;</code>
-      <code><mark>&lt;head&gt;</mark> <mark class="comment">&lt;!--Comment--&gt;</mark></code>
-      <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-      <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-      <code>    &lt;link rel="stylesheet" href="s/screen.css"&gt;</code>
-      <code>    &lt;script src="j/jquery.js"&gt;&lt;/script&gt;</code>
-      <code><mark>&lt;/head&gt;</mark></code>
-    </pre>
-  </div></section>
-  <section class="slide"><div>
-    <h2>Code in separate blocks</h2>
-    <pre>
-      <code><mark>&lt;html</mark> lang="en"&gt;</code>
-    </pre>
-    <p class="note">Now you can add a note for each block</p>
-    <pre>
-      <code><mark>&lt;meta</mark> charset="<mark>UTF-8</mark>"&gt;</code>
-    </pre>
-    <p class="note">And explain what is interesting about it</p>
-  </div></section>
-  <section class="slide shout"><div>
-    <h2>You can shout<br> this way</h2>
-  </div></section>
-  <section class="slide cover" id="Picture"><div>
-    <h2>And place any picture</h2>
-    <img src="pictures/picture.jpg" alt="">
-  </div></section>
-  <section class="slide"><div>
-    <h2>Inner navigation</h2>
-    <ol>
-      <li>Lets you change objects one by one</li>
-      <li class="next">For example, show list items</li>
-      <li class="next">Or switch pictures</li>
-      <li class="next">And much more</li>
-      <li class="next">But it will work only once</li>
-    </ol>
-  </div></section>
-
-
 
 	<!--
 		To hide progress bar from entire presentation
