@@ -17,8 +17,12 @@
 		}
 
 		#cover h1 {
-			font-size: 200%
+			font-size: 200%;
 		}
+
+    #hamster img {
+      padding-top: 150px;
+    }
 	</style>
 </head>
 <body class="list">
@@ -45,71 +49,105 @@
 
 	<section class="slide" id="external-title"><div>
 		<h2>External quality</h2>
-		<p><b>External quality</b> This is the quality of the product that is perceived by the users of the product. This includes the stability of the product, the ease of use of it, the interaction design and the way it conforms to the requirements</p>
+		<p>External quality This is the <b>quality of the product</b> that is perceived by the users of the product. This includes the stability of the product, the ease of use of it, the interaction design and the way it conforms to the requirements</p>
 	</div></section>
 
-	<section class="slide cover" id="external1"><div>
+	<section class="slide cover"><div>
 		<img src="pictures/503-1.png" alt="">
 	</section></div>
 
-	<section class="slide cover" id="external2"><div>
+	<section class="slide cover"><div>
 		<img src="pictures/503-2.jpg" alt="">
 	</section></div>
 
-	<section class="slide cover" id="external3"><div>
+	<section class="slide cover"><div>
 		<img src="pictures/503-3.png" alt="">
 	</section></div>
 
-	<section class="slide cover" id="external4"><div>
+	<section class="slide cover"><div>
 		<img src="pictures/503-4.jpg" alt="">
 	</section></div>
 
-	<section class="slide cover" id="external5"><div>
+	<section class="slide cover"><div>
 		<img src="pictures/503-5.jpg" alt="">
 	</section></div>
 
 	<section class="slide" id="internal-title"><div>
 		<h2>Internal quality</h2>
 
-		<p><b>Internal quality</b> This is the quality of the source code, the quality of the architecture, the quality of the development process around the product, etc. Anything that is not perceivable by the users of the software.</p>
+		<p>This is the <b>quality of the source code</b>, the quality of the architecture, the quality of the development process around the product, etc. Anything that is not perceivable by the users of the software.</p>
 	</div></section>
 
+  <section class="slide"><div>
+    <pre>
+    	<code>bool IsBukva(char symbol) {</code>
+    	<code>  switch(symbol) {</code>
+    	<code>    case'a':return 1;break;</code>
+    	<code>    case'b':return 1;break;</code>
+    	<code>    case'c':return 1;break;</code>
+    	<code>    case'd':return 1;break;</code>
+    	<code>    case'e':return 1;break;</code>
+    	<code>    case'f':return 1;break;</code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <pre>
+      <code>void loop() {</code>
+      <code>  message(false);</code>
+      <code>  message(true);</code>
+      <code>  message(false);</code>
+      <code>  message(true);</code>
+      <code>  message(false);</code>
+      <code>  message(false);</code>
+      <code>}</code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <h2>HTML can be awful too</h2>
+    <pre>
+      <code>&lt;table cellspacing=&quot;0&quot; width=960 cellpadding=&quot;0&quot; </code>
+      <code>border=0 align=center class=txt&gt;</code>
+      <code>&lt;tr&gt;&lt;td&gt;</code>
+      <code>&lt;div style=&quot;position: relative; width: 960px; height: 190px; </code>
+      <code>top: 0px; z-index: 999;&quot;&gt;</code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <pre>
+      <code>- (void) closeApp {</code>
+      <code>   int closer = 1 / 0;</code>
+      <code>}</code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <pre>
+      <code>if city.present?</code>
+      <code>  if city.city.present?</code>
+      <code>    city = city.city</code>
+      <code>  else</code>
+      <code>    city = "NIL"</code>
+      <code>  end</code>
+      <code>else</code>
+      <code>  city = "NIL"</code>
+      <code>end</code>
+    </pre>
+  </div></section>
+
+  <section class="slide cover" id="hamster"><div>
+    <h2>So, what should we do?</h2>
+    <img src="pictures/code_hamster.png" alt="" class="next">
+  </div></section>
 
 
-	<section class="slide"><div>
-		<h2>When you have a lot of code</h2>
-		<pre>
-			<code>&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <mark class="comment">&lt;!--Comment--&gt;</mark></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="s/screen.css"&gt;</code>
-			<code>    &lt;script src="j/jquery.js"&gt;&lt;/script&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
-		</pre>
-	</div></section>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<section class="slide" data-timing="00:05"><div>
-		<h2>Slide with timer</h2>
-		<p>It will change right in five seconds</p>
-	</div></section>
 
 	<section class="slide"><div>
 		<h2>Heading</h2>
@@ -184,16 +222,21 @@
 			<li class="next">But it will work only once</li>
 		</ol>
 	</div></section>
+
+
 	<section class="slide"><div>
-		<h2>Shower Presentation Engine</h2>
-		<p>Vadim Makeev, Opera Software</p>
+		<h2>Code quality</h2>
+		<p>Alexander Rozumiy, Innovecs</p>
 		<ul>
-			<li><a href="http://pepelsbey.net">pepelsbey.net</a></li>
-			<li><a href="http://twitter.com/pepelsbey">twitter.com/pepelsbey</a></li>
-			<li><a href="mailto:pepelsbey@gmail.com">pepelsbey@gmail.com</a></li>
+			<li><a href="http://twitter.com/brain-geek">twitter.com/brain-geek</a></li>
+			<li><a href="mailto:alex@rozumiy.name">alex@rozumiy.name</a></li>
 		</ul>
-		<p>Shower: <a href="https://github.com/shower/shower">github.com/shower/shower</a></p>
+		<p>Presentation: <a href="https://github.com/shower/shower">github.com/shower/shower</a></p>
 	</div></section>
+
+
+
+
 	<!--
 		To hide progress bar from entire presentation
 		just remove “progress” element.
@@ -201,6 +244,5 @@
 	<div class="progress"><div></div></div>
 	<script src="shower/shower.js"></script>
 	<!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
-	<!-- Photos by John Carey — fiftyfootshadows.net -->
 </body>
 </html>

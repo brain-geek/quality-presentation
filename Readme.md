@@ -12,12 +12,12 @@ http://static.ibnlive.in.com/ibnlive/pix/sitepix/10_2011/google-502-error-191011
 http://www.redolivedesign.com/utah-web-designers-blog/wp-content/uploads/2010/11/TwitterDown.jpg
 
 #### Information:
-Very good article on subject:
+Very good article on subject and a remakrable hamster:
 http://www.planetgeek.ch/2010/06/17/code-quality-building-code-you-wont-curse-tomorrow/
 Quality definition taken form:
 http://blogs.oosterkamp.nl/blogs/thomas/archive/2010/04/06/software-quality-external-versus-internal.aspx
 
-#### Code snippets:
+#### Code snippets are mostly taken from govnokod.ru
 
 ---
 
