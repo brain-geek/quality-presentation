@@ -1,25 +1,23 @@
-# Shower presentation example
+# Code quality
 
 Based on [shower](https://github.com/shower/shower) engine and [ribbon](https://github.com/shower/ribbon) theme.
 
-To see Shower in action:
+## Data sources:
 
-- Open [shwr.me](http://shwr.me/)
-- Click any slide to enter presentation mode
-- Use arrow keys to navigate
-- Press `Esc` to exit presentation mode
+#### Images:
+https://jira.atlassian.com/secure/attachment/37978/Picture%205.png
+http://linkaider.com/wp-content/uploads/2009/12/ruby-on-rails-error.jpg
+http://bugs.amahi.org/attachments/download/17/sabnzbd.png
+http://static.ibnlive.in.com/ibnlive/pix/sitepix/10_2011/google-502-error-191011.jpg
+http://www.redolivedesign.com/utah-web-designers-blog/wp-content/uploads/2010/11/TwitterDown.jpg
 
-See more details in Shower [readme](https://github.com/shower/shower#readme). Follow [@shower_me](http://twitter.com/shower_me/) for support and updates. Use [Issues](https://github.com/shower/shower/issues) for sharing your ideas, bugs and feature requests.
+#### Information:
+Very good article on subject:
+http://www.planetgeek.ch/2010/06/17/code-quality-building-code-you-wont-curse-tomorrow/
+Quality definition taken form:
+http://blogs.oosterkamp.nl/blogs/thomas/archive/2010/04/06/software-quality-external-versus-internal.aspx
 
-## Using template
-
-To get Shower template run following command:
-
-```
-git clone --recursive git@github.com:shower/template.git
-```
-
-Or you can just download [latest version](http://shwr.me/template.zip) as ZIP file.
+#### Code snippets:
 
 ---
 
