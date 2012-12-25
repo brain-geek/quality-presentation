@@ -270,7 +270,7 @@
   </div></section>
 
   <section class="slide shout"><div>
-    <h2>Comments and identation</h2>
+    <h2>Comments and identation: you write code for people</h2>
   </div></section>
 
   <section class="slide"><div>
@@ -332,6 +332,18 @@
       <code>echo “&lt;option&gt;Телефон”;</code>
     </pre>
     <p><a href="http://govnokod.ru/140">Full version</a></p>
+  </div></section>
+
+  <section class="slide"><div>
+    <pre>
+      <code>If Day(Date) = 1 Then</code>
+      <code>    PreviousDay =  DateSerial(Year(Date), Month(Date), 1) - 1</code>
+      <code>    date_past_normalized = CStr(PreviousDay)</code>
+      <code>else</code>
+      <code>    PreviousDay = DateSerial(Year(Date), Month(Date), Day(Date)) - 1</code>
+      <code>    date_past_normalized = CStr(PreviousDay)</code>
+      <code>End If</code>
+    </pre>
   </div></section>
 
   <!-- ----------------------- -->
