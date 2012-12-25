@@ -294,6 +294,21 @@
     </pre>
   </div></section>
 
+  <section class="slide"><div>
+    <pre>
+      <code>def self.allow_some_behaviour?</code>
+      <code>  # better safe than sorry.</code>
+      <code>  bool = !false ? !false : !!false</code>
+      <code>  # type checking</code>
+      <code>  if bool</code>
+      <code>    # short circuit just in case</code>
+      <code>    return !true;</code>
+      <code>  elsif !bool</code>
+      <code>    return !false</code>
+      <code>  end</code>
+      <code>end</code>
+    </pre>
+  </div></section>
 
   <!-- ----------------------- -->
 
