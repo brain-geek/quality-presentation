@@ -134,20 +134,6 @@
     </pre>
   </div></section>
 
-  <section class="slide"><div>
-    <pre>
-      <code>if city.present?</code>
-      <code>  if city.city.present?</code>
-      <code>    city = city.city</code>
-      <code>  else</code>
-      <code>    city = "NIL"</code>
-      <code>  end</code>
-      <code>else</code>
-      <code>  city = "NIL"</code>
-      <code>end</code>
-    </pre>
-  </div></section>
-
   <section class="slide cover" id="hamster"><div>
     <h2>So, what should we do?</h2>
     <img src="pictures/code_hamster.png" alt="" class="next">
@@ -237,6 +223,20 @@
       <code>$week['sunday'] = date("d.m.Y", $week_start + 6 * 86400);</code>
     </pre>
   </section></div>
+
+  <section class="slide"><div>
+    <pre>
+      <code>if city.present?</code>
+      <code>  if city.city.present?</code>
+      <code>    city = city.city</code>
+      <code>  else</code>
+      <code>    city = "NIL"</code>
+      <code>  end</code>
+      <code>else</code>
+      <code>  city = "NIL"</code>
+      <code>end</code>
+    </pre>
+  </div></section>
 
   <!-- ----------------------- -->
 
@@ -348,6 +348,16 @@
       <code>    date_past_normalized = CStr(PreviousDay)</code>
       <code>End If</code>
     </pre>
+  </div></section>
+
+  <!-- ----------------------- -->
+
+  <section class="slide shout"><div>
+    <h2>TDD</h2>
+  </div></section>
+
+  <section class="slide cover"><div>
+    <img src="pictures/tdd.png" alt="">
   </div></section>
 
   <!-- ----------------------- -->
