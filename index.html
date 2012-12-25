@@ -196,6 +196,16 @@
     </pre>
   </div></section>
 
+  <section class="slide"><div>
+    <pre>
+      <code>$('div').each(function () {</code>
+      <code>  if ($(this).attr('id') == 'blok') {</code>
+      <code>    $(this).html('');</code>
+      <code>  }</code>
+      <code>});</code>
+    </pre>
+  </div></section>
+
   <!-- ----------------------- -->
 
   <section class="slide shout" id="think"><div>
@@ -248,17 +258,40 @@
       <code>S9:    j-=1; r-=1; if (r>0) goto S3;</code>
       <code>S10:   k+=d; if (k==l) goto S13; else x[k]=x[i];c[k]=c[i];</code>
       <code>S11:   i+=1; q-=1; if (q>0) goto S10;</code>
-      <code>S12:   q=p; r=p; d=-d; t=k; k=l; l=t; if (j-i<p) goto S10; else goto S3;</code>
-      <code>S13:   p+=p; if (p<n) { s=1-s; goto S2; }</code>
-      <code>       if (s==0) for (t=1; t<=n; t+=1) { x[t]=x[t+n];c[t]=c[t+n] }</code>
+      <code>S12:   q=p; r=p; d=-d; t=k; k=l; l=t; if (j-i&lt;p) goto S10; else goto S3;</code>
     </pre>
     <p><a href="http://govnokod.ru/286">Full version</a></p>
   </div></section>
 
   <!-- ----------------------- -->
 
+  <section class="slide cover" id="wtfs"><div>
+    <img src="pictures/wtfs.jpg" alt="">
+  </div></section>
+
   <section class="slide shout"><div>
-    <h2>Comments: use it when and only when it's needed</h2>
+    <h2>Comments and identation</h2>
+  </div></section>
+
+  <section class="slide"><div>
+    <pre>
+      <code>function newuser($username){</code>
+      <code>  return;</code>
+      <code>  /*</code>
+      <code>    ДВАДЦАТЬ СТРОК КОДА</code>
+      <code>  */</code>
+      <code>  //не пойму почему не работает:ФИО Программиста</code>
+      <code>}</code>
+    </pre>
+  </div></section>
+
+  <section class="slide"><div>
+    <pre>
+    <code># заменяем в разделитель на запятую в поле "Количество"</code>
+    <code>$row[4] =~ s/\./,/;</code>
+    <code># лишние нули красим цветом фона</code>
+    <code>$row[4] =~ s/,000/<font color=#ffffff>.000<\/font>/;</code>
+    </pre>
   </div></section>
 
 
@@ -293,14 +326,10 @@
     <ol>
       <li><a href="http://www.youtube.com/watch?v=Oj4vXMRenFo">Delete your code, Aleksander Dabrowski</a></li>
       <li class="next"><a href="http://www.planetgeek.ch/2010/06/17/code-quality-building-code-you-wont-curse-tomorrow/">Code quality</a></li>
-      <li class="next">Or switch pictures</li>
-      <li class="next">And much more</li>
-      <li class="next">But it will work only once</li>
+      <li class="next">Use TDD</li>
+      <li class="next">Gain expertise</li>
+      <li class="next">PROFIT!!!</li>
     </ol>
-  </div></section>
-
-  <section class="slide cover" id="wtfs"><div>
-    <img src="pictures/wtfs.jpg" alt="">
   </div></section>
 
   <section class="slide shout" id="else"><div>
